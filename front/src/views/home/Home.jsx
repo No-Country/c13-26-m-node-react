@@ -1,13 +1,15 @@
 import React from 'react'
-import Hero from '../../components/hero/Hero'
+import Hero from '../../components/hero/Hero';
+import Banner from '../../components/banner/Banner';
 import { FaBoxOpen } from "react-icons/fa6";
 import {FaCrown} from "react-icons/fa6";
 import {FaShieldHeart} from "react-icons/fa6";
 
 const Home = () => {
   return (
-    <div className='h-screen my-12'>
+    <div className='h-full w-full my-12'>
       <Hero/>
+      {/* Inicio segunda section */}
       <div className='bg-white flex items-center justify-center border-solid border border-current rounded-xl h-16 sm:h-32 sm:m-12 m-6'>
         <div className='h-8 w-20 m-3 sm:h-20 sm:w-72 flex justify-center items-center sm:me-16'>
           <FaBoxOpen className='h-6 w-8 sm:h-10 sm:w-12 m-1 sm:ms-5'/>
@@ -31,6 +33,13 @@ const Home = () => {
           </div>
         </div>
       </div>
+     {/* Fin segunda section */}
+
+      <div className='border border-2 border-current h-52 sm:h-96 m-5 sm:m-10'>
+        <h3>Popular products</h3> 
+      </div>
+
+      <Banner/>
     </div>
   )
 }
