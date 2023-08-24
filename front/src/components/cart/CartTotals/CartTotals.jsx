@@ -15,8 +15,8 @@ const CartTotals = () => {
 				<p className="mr-auto">Items: {items}</p>
 				<p>Total: ${totalPrice}</p>
 				<button
-					className="bg-gray-400 text-grey-darkest font-bold py-2 px-4 rounded-full inline-flex items-center
-													hover:bg-gray-700 hover:text-gray-100"
+					className="bg-gray-300 text-grey-darkest font-semibold py-2 px-4 rounded-full inline-flex items-center
+													hover:bg-gray-600 hover:text-gray-100"
 				>
 					<span>Proceed to checkout</span>
 				</button>

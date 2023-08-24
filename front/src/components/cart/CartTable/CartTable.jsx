@@ -1,4 +1,5 @@
 import { MdOutlineDeleteForever as DeleteIcon } from "react-icons/md"
+import Counter from "../../counter/Counter"
 
 const CartTable = ({ products }) => {
 	return (
@@ -28,7 +29,9 @@ const CartTable = ({ products }) => {
 							<p className="text-center">{product.itemName}</p>
 						</td>
 						<td>${product.price}</td>
-						<td>{product.quantity}</td>
+						<td>
+							<Counter initialValue={product.quantity}/>
+						</td>
 						<td>{product.subtotal}</td>
 					</tr>
 				))}

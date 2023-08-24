@@ -11,8 +11,8 @@ let InitProducts = [
 		quantity: 3,
 		subtotal: 3000,
 	},
-	{ id: 2, img: "url", itemName: "Item Name", price: 1000, quantity: 3, subtotal: 3000 },
-	{ id: 3, img: "url", itemName: "Item Name", price: 1000, quantity: 3, subtotal: 3000 },
+	{ id: 2, img: "url", itemName: "Item Name", price: 1000, quantity: 2, subtotal: 3000 },
+	{ id: 3, img: "url", itemName: "Item Name", price: 1000, quantity: 1, subtotal: 3000 },
 ]
 
 const initTotals = {
