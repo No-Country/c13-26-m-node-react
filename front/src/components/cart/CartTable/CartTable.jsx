@@ -1,4 +1,3 @@
-import React, { useState } from "react"
 
 let initial = [
 	{ itemName: "This is the longest longest longest item name", price: 1000, quantity: 3, subtotal: 3000 },
