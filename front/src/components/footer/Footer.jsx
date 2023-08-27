@@ -6,9 +6,10 @@ import {SlSocialGoogle} from "react-icons/sl";
 const Footer = () => {
 
   return (
-    <main className='min-h-screen bg-black text-white flex flex-col p-8'>
+    <main className=' bg-black text-white flex p-8 items-center
+     flex-col xl:flex-row justify-around'>
 
-      <article>
+      <article className='flex items-center flex-col'>
         <p className='text-lg font-light text-stone-300'>
           64 st james boulevard
         </p>
@@ -16,14 +17,14 @@ const Footer = () => {
           hoswick ,ze2 7z
         </p>
         <span className='border-t-[1px] text-stone-300 px-[135px]'></span>
-        <div className='flex flex-row text-stone-500 text-3xl gap-8 pb-14'>
+        <div className='flex flex-row text-stone-500 text-3xl gap-8 py-10'>
         <SlSocialGoogle/>
         <AiOutlineFacebook/>
         <FaWhatsapp/>
         </div>
       </article>
 
-      <article className='pb-16 pl-6 text-stone-300'>
+      <article className='pb-16 text-stone-300'>
         <h3 className='text-lg font-bold'>
           Find product
         </h3>
@@ -36,7 +37,7 @@ const Footer = () => {
         </ul>
       </article>
 
-      <article className='pb-16 pl-6 text-stone-300'>
+      <article className='pb-16 text-stone-300'>
         <h3 className='text-lg font-bold'>
           Get help
         </h3>
@@ -49,11 +50,11 @@ const Footer = () => {
         </ul>
       </article>
 
-      <article className='pl-6 text-stone-300'>
+      <article className='text-stone-300'>
         <h3 className='text-lg font-bold'>
           About us
         </h3>
-        <ul className='text-lg list-disc font-light'>
+        <ul className='text-lg list-disc font-light xl:pb-[63px]'>
           <li>News</li>
           <li>Service</li>
           <li>Out policy</li>
