@@ -45,9 +45,9 @@ const Home = () => {
       <Banner />
 
       <div className='text-center m-5 sm:m-10'>
-        <h3 className='text-[40px]'>Testimonios</h3>
+        <h3 className='text-[40px] mb-5'>Testimonios</h3>
         <div className='grid sm:flex items-center justify-center sm:my-6'>
-          <div className="h-full flex flex-col items-center justify-center rounded-xl mb-2 sm:mb-0 sm:mx-2 text-center bg-white border-solid border border-current w-full sm:w-4/12">
+          <div className="h-full flex flex-col items-center justify-center rounded-xl mb-6 sm:mb-0 sm:mx-2 text-center bg-white border-solid border border-current w-full sm:w-4/12">
             <div className="mb-2 rounded-t-xl flex items-center h-full w-full bg-gray-200 text-black font-light">
               <p className="p-5 rounded-xl">"Si linguis hominum loquar, et angelorum, caritatem autem non habeam, factus sum velut æs sonans, aut cymbalum tinniens. Et si habuero prophetiam, et noverim mysteria omnia, et omnem scientiam."</p>
             </div>
@@ -60,7 +60,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="h-full flex flex-col items-center justify-center rounded-xl my-2 sm:my-0 sm:mx-2 text-center bg-white border-solid border border-current w-full sm:w-4/12">
+          <div className="h-full flex flex-col items-center justify-center rounded-xl mb-3 sm:my-0 sm:mx-2 text-center bg-white border-solid border border-current w-full sm:w-4/12">
             <div className="mb-2 rounded-t-xl flex items-center h-full w-full bg-gray-200 text-black font-light">
               <p className="p-5 rounded-xl">"Si linguis hominum loquar, et angelorum, caritatem autem non habeam, factus sum velut æs sonans, aut cymbalum tinniens. Et si habuero prophetiam, et noverim mysteria omnia, et omnem scientiam."</p>
             </div>
@@ -73,7 +73,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="h-full flex flex-col items-center justify-center rounded-xl mt-2 sm:mt-0 sm:mx-2 text-center bg-white border-solid border border-current w-full sm:w-4/12">
+          <div className="h-full flex flex-col items-center justify-center rounded-xl sm:mt-0 sm:mx-2 text-center bg-white border-solid border border-current w-full sm:w-4/12">
             <div className="mb-2 rounded-t-xl flex items-center h-full w-full bg-gray-200 text-black font-light">
               <p className="p-5 rounded-xl">"Si linguis hominum loquar, et angelorum, caritatem autem non habeam, factus sum velut æs sonans, aut cymbalum tinniens. Et si habuero prophetiam, et noverim mysteria omnia, et omnem scientiam."</p>
             </div>
