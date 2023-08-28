@@ -1,4 +1,4 @@
-import React from 'react'
+
 import {BsCartDash} from "react-icons/bs";
 import {AiOutlineUser, AiOutlineMenu} from "react-icons/ai";
 import {BiChevronDown} from "react-icons/bi";
