@@ -2,6 +2,7 @@ import "./App.css"
 import Home from "./views/home/Home"
 import Cart from "./views/cart/Cart"
 import Products from "./views/products/Products"
+import Footer from "./components/footer/Footer"
 import { Route, Routes } from "react-router-dom"
 
 function App() {
@@ -12,8 +13,10 @@ function App() {
 				<Route path='/cart' element={<Cart/>}/>
 				<Route path='/shop' element={<Products/>}/>
 			</Routes>
+            <Footer/>
 		</div>
 	)
 }
+
 
 export default App
