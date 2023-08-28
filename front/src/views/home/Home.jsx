@@ -7,7 +7,7 @@ import { FaShieldHeart } from "react-icons/fa6";
 
 const Home = () => {
   return (
-    <div className='h-full w-full my-12'>
+    <div className='h-full w-full'>
       <Hero />
       {/* Inicio segunda section */}
       <div className='grid grid-rows-3 sm:grid-rows-1 sm:grid-cols-3 justify-around items-center border-solid border border-current rounded-xl h-full sm:m-12 m-6'>
