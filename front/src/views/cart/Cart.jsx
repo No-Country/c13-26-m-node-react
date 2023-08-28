@@ -1,6 +1,7 @@
 import { useState } from "react"
 import CartTable from "../../components/cart/CartTable/CartTable"
 import CartTotals from "../../components/cart/CartTotals/CartTotals"
+import SectionTitle from "../../components/sectionTitle/SectionTitle"
 
 let InitProducts = [
 	{
@@ -27,12 +28,9 @@ const Cart = () => {
 
 	return (
 		<div>
-			<div id="allcontainer" className="max-w-4xl m-auto ">
-        <div id="header">
-          <div id="path">
-            <p className='mt-10'>Home / Cart</p>
-          </div>
-          <h2 className="text-3xl font-normal py-2">Cart</h2>
+			<div id="allcontainer" className="max-w-4xl m-auto px-[5%] ">
+        <div id="">
+					<SectionTitle title='Cart'/>
           <CartTable products={products} />
           <CartTotals totals={totals}/>
         </div>
