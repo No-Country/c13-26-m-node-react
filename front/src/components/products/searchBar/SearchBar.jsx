@@ -10,7 +10,7 @@ const SearchBar = () => {
 			<div class="flex w-full rounded-full border bg-white px-3">
 				<input
 					type="search"
-					className=" m-0 mr-0.5 block flex-auto font-normal bg-white text-neutral-700 focus:border-primary focus:text-neutral-700 focus:outline-none"
+					className="px-2 block flex-auto font-normal bg-white text-neutral-700 focus:border-primary focus:text-neutral-700 focus:outline-none"
 					placeholder="Search"
 				/>
 
