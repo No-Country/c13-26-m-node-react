@@ -11,7 +11,9 @@ const CartTotals = () => {
 	return (
 		<div>
 			<h2 className="font-semibold mt-5">Cart Totals</h2>
-			<div className="px-5 py-3 flex justify-end items-center gap-5 font-normal shadow-container">
+			<div className="px-5 py-3
+			 								flex justify-end items-center gap-5
+											font-normal shadow-container rounded-b-xl">
 				<p className="mr-auto">Items: {items}</p>
 				<p>Total: ${totalPrice}</p>
 				<button
