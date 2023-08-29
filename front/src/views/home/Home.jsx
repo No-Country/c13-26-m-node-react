@@ -4,6 +4,7 @@ import Banner from '../../components/banner/Banner';
 import { FaBoxOpen } from "react-icons/fa6";
 import { FaCrown } from "react-icons/fa6";
 import { FaShieldHeart } from "react-icons/fa6";
+import CardProduct from '../../components/cardProduct/CardProduct';
 
 const Home = () => {
   return (
@@ -38,9 +39,15 @@ const Home = () => {
       </div>
       {/* Fin segunda section */}
 
-      <div className='border border-2 border-current h-52 sm:h-96 m-5 sm:m-10'>
+    {/* Inicio section de productos */}
+      <div className='border border-2 border-current m-5 sm:m-10'>
         <h3>Popular products</h3>
+        <CardProduct/>
+        <CardProduct/>
+        <CardProduct/>
+        <CardProduct/>
       </div>
+    {/* Fin section de productos */}
 
       <Banner />
 
