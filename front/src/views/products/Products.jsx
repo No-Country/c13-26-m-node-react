@@ -17,11 +17,11 @@ const Products = () => {
 					<div className="border">
 						<ProductsContainer />
 					</div>
-					<aside className="py-2 px-2
-														md:px-1 md:py-7 md:w-full
+					<aside className="py-2
+														md:px-1 md:py-7 md:w-full md:border
 														lg:w-[60%] lg:py-2
 														xl:w-[30%] xl:p-5
-														border">
+														">
 						<AsideBar />
 					</aside>
 				</section>

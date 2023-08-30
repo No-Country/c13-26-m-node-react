@@ -7,7 +7,8 @@ const SearchBar = () => {
 
 	return (
 		<div className="">
-			<div className="flex w-full rounded-full border bg-white px-3">
+			<div className="flex w-full bg-white px-3 border rounded-lg
+											md:rounded-full  ">
 				<input
 					type="search"
 					className="text-sm px-2 block flex-auto font-normal bg-white text-neutral-700 

@@ -6,11 +6,10 @@ const UpperBar = () => {
 	return (
 		<div
 			className="flex flex-col-reverse
-			md:justify-end md:items-center md:flex-row
-										w-full py-2 gap-3
-										"
+								md:justify-end md:items-center md:flex-row
+								w-full py-2 gap-3"
 		>
-			<div className="mr-auto">
+			<div className="md:mr-auto">
 				<SortingMenu />
 			</div>
 			<SearchBar />

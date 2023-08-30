@@ -6,7 +6,9 @@ const ProductCard = ({ product }) => {
 	return (
 		<div
 			className="flex flex-col justify-center items-center
-								text-center shadow-container w-60 h-72
+								w-[90%] h-72
+								text-center shadow-container
+								md:w-64
 								lg:w-60"
 		>
 			<img className='h-1/2' src={img} alt=""/>
