@@ -40,19 +40,21 @@ const Home = () => {
       {/* Fin segunda section */}
 
     {/* Inicio section de productos */}
-      <div className='border border-2 border-current m-5 sm:m-10'>
-        <h3>Popular products</h3>
+      <div className='m-5 sm:m-10'>
+        <h3 className='text-[30px] mb-5'>Popular products</h3>
+        <div className='sm:grid-rows-1 sm:grid-cols-4 sm:flex justify-around space-x-2.5'>
         <CardProduct/>
         <CardProduct/>
         <CardProduct/>
         <CardProduct/>
+        </div>
       </div>
     {/* Fin section de productos */}
 
       <Banner />
 
       <div className='text-center m-5 sm:m-10'>
-        <h3 className='text-[40px] mb-5'>Testimonios</h3>
+        <h3 className='text-[30px] mb-5'>Testimonios</h3>
         <div className='grid sm:flex items-center justify-center sm:my-6'>
           <div className="h-full flex flex-col items-center justify-center rounded-xl mb-6 sm:mb-0 sm:mx-2 text-center bg-white border-solid border border-current w-full sm:w-4/12">
             <div className="mb-2 rounded-t-xl flex items-center h-full w-full bg-gray-200 text-black font-light">

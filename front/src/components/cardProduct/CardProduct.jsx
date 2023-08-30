@@ -2,7 +2,7 @@ import { AiFillStar, AiOutlineShoppingCart } from 'react-icons/ai';
 
 const CardProduct = () => {
   return (
-    <div className='shadow-md'>
+    <div className='shadow-md mb-4'>
       <article className='bg-white rounded-[20px] h-[520px] shadow-md'>
         <figure className='px-5 pt-5 w-full flex justify-center items-center'>
           <img src="https://res.cloudinary.com/dreso9ye9/image/upload/v1692627425/iPhone12PromaxGrafito_byckia.png" alt="Imagen producto" className='w-[250px]'/>
