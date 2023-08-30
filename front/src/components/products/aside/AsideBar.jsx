@@ -4,7 +4,7 @@ import CartResume from '../../cart/cartResume/CartResume'
 
 const AsideBar = () => {
 	return (
-		<div>
+		<div className=''>
 			<Filters />
 			<CartResume />
 		</div>

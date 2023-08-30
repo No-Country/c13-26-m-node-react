@@ -2,6 +2,7 @@ import React from "react"
 import UpperBar from "../../components/products/upperBar/UpperBar"
 import SectionTitle from "../../components/sectionTitle/SectionTitle"
 import AsideBar from "../../components/products/aside/AsideBar"
+import ProductsContainer from "../../components/products/products/ProductsContainer"
 
 const Products = () => {
 	return (
@@ -10,8 +11,10 @@ const Products = () => {
 				<SectionTitle title="Shop" />
 				<UpperBar />
 				<section className="grid grid-cols-4 h-screen">
-					<div className="col-span-3 bg-slate-900">1</div>
-					<aside className="p-3 bg-slate-700">
+					<div className="col-span-3 border">
+						<ProductsContainer />
+					</div>
+					<aside className="py-7 px-10 border">
 						<AsideBar />
 					</aside>
 				</section>

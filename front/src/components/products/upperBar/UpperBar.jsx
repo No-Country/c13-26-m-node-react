@@ -6,7 +6,7 @@ const UpperBar = () => {
 	return (
 		<div
 			className="flex justify-end items-center
-										w-full py-2 px-5
+										w-full py-2
 										"
 		>
 			<div className="mr-auto">
