@@ -6,7 +6,9 @@ import ProductsContainer from "../../components/products/products/ProductsContai
 
 const Products = () => {
 	return (
-		<div id="all-container sm:border sm:border-blue-900" className="font-poppins p-1">
+		<div id="all-container" className="font-poppins p-1
+																			md:w-[90%] md:m-auto
+																			lg:w-[80%]">
 			<div className="w-full ">
 				<SectionTitle title="Shop" />
 				<UpperBar />
@@ -19,7 +21,7 @@ const Products = () => {
 					</div>
 					<aside className="py-2
 														md:px-1 md:py-7 md:w-full md:border
-														lg:w-[60%] lg:py-2
+														lg:w-[60%] lg:py-5
 														xl:w-[30%] xl:p-5
 														">
 						<AsideBar />

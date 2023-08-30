@@ -8,8 +8,8 @@ const ProductCard = ({ product }) => {
 			className="flex flex-col justify-center items-center
 								w-[90%] h-72
 								text-center shadow-container
-								md:w-64
-								lg:w-60"
+								md:w-56
+								lg:w-52"
 		>
 			<img className='h-1/2' src={img} alt=""/>
 			<p className="text-red-500 text-xs">{category}</p>
