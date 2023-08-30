@@ -1,10 +1,11 @@
 import React from "react"
+import BreadCrumbs from "../breadCrumbs/BreadCrumbs"
 
-const SectionTitle = ({title}) => {
+const SectionTitle = ({ title }) => {
 	return (
 		<div>
 			<div id="path">
-				<p className="mt-10">Path / Path / Path</p>
+				<BreadCrumbs />
 			</div>
 			<h2 className="text-3xl font-normal py-2">{title}</h2>
 		</div>
