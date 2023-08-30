@@ -6,13 +6,14 @@ const ProductCard = ({ product }) => {
 	return (
 		<div
 			className="flex flex-col justify-center items-center
-								text-center shadow-container w-48 h-72"
+								text-center shadow-container w-60 h-72
+								lg:w-60"
 		>
-			<img src={img} alt="" />
-			<p className="text-red-500">{category}</p>
+			<img className='h-1/2' src={img} alt=""/>
+			<p className="text-red-500 text-xs">{category}</p>
 			<p className="font-semibold">{name}</p>
-			<p className="font-semibold">{price}</p>
-			<p className="font-semibold">{rating}</p>
+			<p className="text-sm">{price}</p>
+			<p className="font-semibold">⭐⭐⭐</p>
 			<button
 				className="w-2/3 py-1 px-5
 									border rounded-full
