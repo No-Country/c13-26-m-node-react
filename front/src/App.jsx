@@ -5,6 +5,9 @@ import Products from "./views/products/Products"
 import Footer from "./components/footer/Footer"
 import { Route, Routes } from "react-router-dom"
 import Detail from "./views/detail/Detail"
+import Login from "./views/login/Login"
+import Register from "./views/register/Register"
+
 
 function App() {
 	return (
@@ -14,6 +17,8 @@ function App() {
 				<Route path='/cart' element={<Cart/>}/>
 				<Route path='/detail' element={<Detail/>}/>
 				<Route path='/shop' element={<Products/>}/>
+				<Route path='/login' element={<Login/>}/>
+				<Route path='/register' element={<Register/>}/>
 			</Routes>
             <Footer/>
 		</div>

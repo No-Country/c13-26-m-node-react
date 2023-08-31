@@ -1,15 +1,15 @@
 import React from "react"
 import SearchBar from "../searchBar/SearchBar"
-import SortingMenu from "../sort/SortingMenu"
+import SortingMenu from "../sortingMenu/SortingMenu"
 
 const UpperBar = () => {
 	return (
 		<div
-			className="flex justify-end items-center
-										w-full py-2 px-5
-										"
+			className="flex flex-col-reverse
+								md:justify-end md:items-end md:flex-row
+								w-full py-2 gap-3"
 		>
-			<div className="mr-auto">
+			<div className="md:mr-auto">
 				<SortingMenu />
 			</div>
 			<SearchBar />
