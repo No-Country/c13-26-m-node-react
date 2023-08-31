@@ -2,14 +2,14 @@ import React from "react"
 import UpperBar from "../../components/products/upperBar/UpperBar"
 import SectionTitle from "../../components/sectionTitle/SectionTitle"
 import AsideBar from "../../components/products/aside/AsideBar"
-import ProductsContainer from "../../components/products/products/ProductsContainer"
+import ProductsContainer from "../../components/products/productsContainer/ProductsContainer"
 
 const Products = () => {
 	return (
 		<div id="all-container" className="font-poppins p-1
 																			md:w-[90%] md:m-auto
 																			lg:w-[80%]">
-			<div className="w-full ">
+			<div className="w-full">
 				<SectionTitle title="Shop" />
 				<UpperBar />
 				<section className="flex

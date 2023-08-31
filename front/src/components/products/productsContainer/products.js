@@ -1,4 +1,4 @@
-import imgURL from '../../../../public/pcdemo.jpg';
+import imgURL from '../../../assets/pcdemo.jpg';
 
 const products = [
   {
