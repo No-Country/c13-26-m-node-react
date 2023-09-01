@@ -2,6 +2,8 @@ import { BsCartDash } from "react-icons/bs";
 import { AiOutlineUser, AiOutlineMenu } from "react-icons/ai";
 import { BiChevronDown } from "react-icons/bi";
 import { FiSearch } from "react-icons/fi";
+import MenuCategories from "./MenuCategories";
+
 
 const Navbar = () => {
   return (
@@ -83,6 +85,7 @@ const Navbar = () => {
             </div>
             <BiChevronDown className="text-xl hidden md:block" />
           </button>
+          
         
         <div className="md:hidden flex gap-2">
           <h3>Menu</h3>
@@ -102,6 +105,9 @@ const Navbar = () => {
         </div>
         </div>
       </article>
+      <div>
+        <MenuCategories/>
+      </div>
     </header>
   );
 };
