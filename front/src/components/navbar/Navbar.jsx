@@ -105,9 +105,7 @@ const Navbar = () => {
         </div>
         </div>
       </article>
-      <div>
-        <MenuCategories/>
-      </div>
+      
     </header>
   );
 };
