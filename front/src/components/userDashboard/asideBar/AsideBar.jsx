@@ -1,47 +1,48 @@
 import React from "react"
 import NavigationLink from "../navigationLink/NavigationLink"
 import NavigationGroup from "../navigationGroup/NavigationGroup"
+import icon from '../../../assets/icons/select-icon.svg'
 
 const linksConfig = [
 	{
 		isGroup: false,
-		icon: "icon",
+		icon: icon,
 		sectionPath: "personalInfo",
 		sectionName: "Personal Info",
 	},
 	{
 		isGroup: false,
-		icon: "icon4",
-		sectionPath: "myOrders",
-		sectionName: "My orders",
+		icon: icon,
+		sectionPath: "myPurchases",
+		sectionName: "My purchases",
 	},
 	{
 		isGroup: true,
-		icon: "icon",
+		icon: icon,
 		sectionPath: null,
 		sectionName: "My store",
 		links: [
 			{
 				isGroup: false,
-				icon: "icon2",
+				icon: icon,
 				sectionPath: "myProducts",
 				sectionName: "My products",
 			},
 			{
 				isGroup: false,
-				icon: "icon3",
+				icon: icon,
 				sectionPath: "addProducts",
 				sectionName: "Add products",
 			},
 			{
 				isGroup: false,
-				icon: "icon3",
+				icon: icon,
 				sectionPath: "sellsRegistry",
 				sectionName: "Sells registry",
 			},
 			{
 				isGroup: false,
-				icon: "icon3",
+				icon: icon,
 				sectionPath: "orders",
 				sectionName: "Orders",
 			},
@@ -52,9 +53,9 @@ const linksConfig = [
 const AsideBar = () => {
 	return (
 		<div
-			className="flex flex-col gap-4 items-start
+			className="flex flex-col gap-2 items-start
 								h-[60vh] py-10 px-5
-								shadow-container rounded-xl
+								shadow-container rounded-xl border border-neutral-700
 								text-sm"
 			id="aside-navbar"
 		>

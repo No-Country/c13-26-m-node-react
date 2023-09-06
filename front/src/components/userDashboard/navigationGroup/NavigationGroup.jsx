@@ -6,16 +6,18 @@ const NavigationGroup = ({ icon, links, sectionName }) => {
 
 	return (
 		<>
-			<div className="flex cursor-pointer" onClick={() => setIsOpen(!isOpen)}>
-				<img src={icon} alt={icon} />
+			<div className="flex cursor-pointer p-3 gap-2 hover:bg-slate-200 w-full rounded-lg" onClick={() => setIsOpen(!isOpen)}>
+				<img className="h-5" src={icon} alt={icon} />
 				<p>{sectionName}</p>
 			</div>
-			<div className={`flex flex-row ${isOpen ? 'hidden' : null}`}>
-				<div className="border border-blue-500 ml-2"></div>
-				<div className="ml-5">
-					{links.map(config => (
-						<NavigationLink icon={config.icon} sectionPath={config.sectionPath} sectionName={config.sectionName} />
-					))}
+			<div className={`flex flex-row
+											${isOpen ? "hidden" : null}
+											w-full`}>
+				<div className="border border-red-500 mx-3 my-1"></div>
+				<div className='flex flex-col gap-1'>
+				{links.map(config => (
+					<NavigationLink icon={config.icon} sectionPath={config.sectionPath} sectionName={config.sectionName} />
+				))}
 				</div>
 			</div>
 		</>
