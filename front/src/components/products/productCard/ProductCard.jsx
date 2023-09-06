@@ -23,8 +23,9 @@ const ProductCard = ({ product, loading }) => {
 					<p className="font-semibold">⭐⭐⭐</p>
 					<button
 						className="w-2/3 py-1 px-5
-									border rounded-full
-									text-xs"
+									border border-neutral-700 rounded-full shadow-md
+									text-xs
+									hover:bg-red-100"
 					>
 						ADD TO CART
 					</button>

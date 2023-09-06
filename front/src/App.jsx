@@ -7,6 +7,7 @@ import { Route, Routes } from "react-router-dom"
 import Detail from "./views/detail/Detail"
 import Login from "./views/login/Login"
 import Register from "./views/register/Register"
+import UserDashboard from "./views/userDashboard/userDashboard"
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
 				<Route path='/shop' element={<Products/>}/>
 				<Route path='/login' element={<Login/>}/>
 				<Route path='/register' element={<Register/>}/>
+				<Route path='/userDashboard' element={<UserDashboard/>}/>
 			</Routes>
             <Footer/>
 		</div>

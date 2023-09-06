@@ -7,16 +7,21 @@ const SearchBar = () => {
 
 	return (
 		<div className="">
-			<div className="flex w-full bg-white px-3 border rounded-lg
-											md:rounded-full  ">
+			<div
+				className="flex w-full bg-white px-3
+											border border-neutral-700 rounded-lg
+											shadow-md
+											hover:border hover:border-red-400
+											md:rounded-full  "
+			>
 				<input
 					type="search"
-					className="text-sm px-2 block flex-auto font-normal bg-white text-neutral-700 
+					className="text-sm px-2 block flex-auto font-normal bg-transparent text-neutral-700 
 											focus:border-primary focus:text-neutral-700 focus:outline-none"
 					placeholder="Search"
 				/>
 
-				<button className="flex items-center text-xs p-2 text-white" type="button">
+				<button className="flex items-center text-xs p-2" type="button">
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="gray" className="h-5 w-5">
 						<path
 							fillRule="evenodd"

@@ -14,8 +14,10 @@ const Filters = () => {
 			<select
 				name=""
 				id=""
-				className="w-full rounded-lg border px-2 py-2
-									text-xs"
+				className="w-full px-2 py-1 text-xs
+									cursor-pointer
+									rounded-lg border border-neutral-700 shadow-md
+									hover:border hover:border-red-400"
 			>
 				{options.map(option => (
 					<option key={"filter-" + option} value={option}>
