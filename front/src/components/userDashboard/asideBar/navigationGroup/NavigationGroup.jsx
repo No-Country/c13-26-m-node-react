@@ -7,7 +7,7 @@ const NavigationGroup = ({ icon, links, sectionName }) => {
 
 	return (
 		<>
-			<div className="flex cursor-pointer p-3 gap-2 hover:bg-slate-200 w-full rounded-lg" onClick={() => setIsOpen(!isOpen)}>
+			<div className="flex cursor-pointer p-3 gap-2 hover:bg-red-100 w-full rounded-lg" onClick={() => setIsOpen(!isOpen)}>
 				<img className="h-5" src={icon} alt={icon} />
 				<p>{sectionName}</p>
 				<img className={`h-5 ml-auto

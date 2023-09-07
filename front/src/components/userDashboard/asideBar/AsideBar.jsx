@@ -54,7 +54,7 @@ const AsideBar = () => {
 	return (
 		<div
 			className="flex flex-col gap-2 items-start
-								min-h-[75vh] py-10 px-5
+								min-h-[70vh] py-5 px-5
 								shadow-container rounded-xl border border-neutral-700
 								text-sm"
 			id="aside-navbar"
@@ -70,7 +70,7 @@ const AsideBar = () => {
 			<button
 				className="mt-auto self-center py-2 px-5 
 											border border-neutral-700 rounded-2xl
-											hover:bg-red-100"
+											hover:bg-red-400 hover:text-gray-100"
 			>
 				x Logout
 			</button>

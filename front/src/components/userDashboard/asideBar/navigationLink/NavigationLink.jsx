@@ -5,7 +5,7 @@ const NavigationLink = ({ icon, sectionPath, sectionName }) => {
 	return (
 		<Link
 			className="flex w-full p-3 gap-2 rounded-lg
-										hover:bg-slate-200"
+										hover:bg-red-100"
 			to={`/userDashboard/${sectionPath}`}
 		>
 			<img className="h-5" src={icon} alt={icon} />
