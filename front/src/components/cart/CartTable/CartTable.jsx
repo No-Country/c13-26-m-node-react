@@ -24,7 +24,7 @@ const CartTable = ({ products }) => {
 								<DeleteIcon />
 							</button>
 						</td>
-						<td className="">
+						<td className="flex flex-row gap-5">
 							<img src={product.img} alt={product.name} />
 							<p className="text-center">{product.itemName}</p>
 						</td>

@@ -4,48 +4,57 @@ import Banner from '../../components/banner/Banner';
 import { FaBoxOpen } from "react-icons/fa6";
 import { FaCrown } from "react-icons/fa6";
 import { FaShieldHeart } from "react-icons/fa6";
+import CardProduct from '../../components/cardProduct/CardProduct';
 
 const Home = () => {
   return (
     <div className='h-full w-full'>
       <Hero />
       {/* Inicio segunda section */}
-      <div className='grid grid-rows-3 sm:grid-rows-1 sm:grid-cols-3 justify-around items-center border-solid border border-current rounded-xl h-full sm:m-12 m-6'>
-        
-        <div className='h-full w-full m-2 sm:h-20 sm:w-72 flex justify-center items-center'>
-          <FaBoxOpen className='h-20 w-20 sm:h-10 sm:w-12 m-2' />
-          <div className='w-full h-full sm:h-12 sm:w-48  flex flex-col justify-center'>
-            <p className='text-xl sm:text-xl font-medium'>Free delivery</p>
-            <p className='text-sm sm:text-sm'>on order above $50,00</p>
+      <div className='grid grid-cols-1 sm:grid-cols-3 gap-6 m-6 md:m-12 p-4 border border-gray-300 rounded-xl'>
+        <div className='flex justify-center items-center'>
+          <FaBoxOpen className='h-12 w-12 text-primary mr-3' />
+          <div>
+            <p className='text-lg sm:text-base font-medium'>Free delivery</p>
+            <p className='text-sm sm:text-xs'>on orders above $50.00</p>
           </div>
         </div>
-        
-        <div className='h-full w-full m-2 sm:h-20 sm:w-72 flex justify-center items-center'>
-          <FaCrown className='h-20 w-20 sm:h-10 sm:w-12 m-2' />
-          <div className='w-full h-full sm:h-12 sm:w-48 flex flex-col justify-center'>
-            <p className='text-xl sm:text-xl font-medium'>Best quality </p>
-            <p className='text-sm sm:text-sm'>best quality in low price</p>
+
+        <div className='flex justify-center items-center ms-4 md:ms-0'>
+          <FaCrown className='h-12 w-12 text-primary mr-3' />
+          <div>
+            <p className='text-lg sm:text-base font-medium'>Best quality</p>
+            <p className='text-sm sm:text-xs'>best quality at a low price</p>
           </div>
         </div>
-        
-        <div className='h-full w-full m-2 sm:h-20 sm:w-72 flex justify-center items-center'>
-          <FaShieldHeart className='h-20 w-20 sm:h-10 sm:w-12 m-2' />
-          <div className='w-full h-full sm:h-12 sm:w-48 flex flex-col justify-center'>
-            <p className='text-xl sm:text-xl font-medium'>1 year warranty</p>
-            <p className='text-sm sm:text-sm'>Avaliable warranty</p>
+
+        <div className='flex justify-center items-center me-4 md:me-0'>
+          <FaShieldHeart className='h-12 w-12 text-primary mr-3' />
+          <div>
+            <p className='text-lg sm:text-base font-medium'>1 year warranty</p>
+            <p className='text-sm sm:text-xs'>Available warranty</p>
           </div>
         </div>
       </div>
+
       {/* Fin segunda section */}
 
-      <div className='border border-2 border-current h-52 sm:h-96 m-5 sm:m-10'>
-        <h3>Popular products</h3>
+      {/* Inicio section de productos */}
+      <div className='m-5 sm:m-10'>
+        <h3 className='text-[30px] mb-5'>Popular products</h3>
+        <div className='sm:grid-rows-1 sm:grid-cols-4 sm:flex justify-around space-x-2.5'>
+          <CardProduct />
+          <CardProduct />
+          <CardProduct />
+          <CardProduct />
+        </div>
       </div>
+      {/* Fin section de productos */}
 
       <Banner />
 
       <div className='text-center m-5 sm:m-10'>
-        <h3 className='text-[40px] mb-5'>Testimonios</h3>
+        <h3 className='text-[30px] mb-5'>Testimonios</h3>
         <div className='grid sm:flex items-center justify-center sm:my-6'>
           <div className="h-full flex flex-col items-center justify-center rounded-xl mb-6 sm:mb-0 sm:mx-2 text-center bg-white border-solid border border-current w-full sm:w-4/12">
             <div className="mb-2 rounded-t-xl flex items-center h-full w-full bg-gray-200 text-black font-light">

@@ -7,8 +7,8 @@ const Counter = ({ initialValue }) => {
 	return (
 		<div className="flex justify-center items-center gap-3">
 			<button onClick={decrement} className="">-</button>
-			<span>{value}</span>
-			<button onClick={increment}>+</button>
+			<span className="">{value}</span>
+			<button onClick={increment} className="">+</button>
 		</div>
 	)
 }
