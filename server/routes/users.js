@@ -19,7 +19,7 @@ const {
     createUser,
     deleteUser,
     partialUpdateUser
-} = require('../controllers/user');
+} = require('../controllers/users');
 
 const router = Router();
 

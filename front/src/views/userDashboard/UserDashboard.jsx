@@ -1,7 +1,8 @@
+import { Outlet } from "react-router-dom"
 import BreadCrumbs from "../../components/breadCrumbs/BreadCrumbs"
 import AsideBar from "../../components/userDashboard/asideBar/AsideBar"
 
-const UserDashboard = () => {
+const UserDashboard = ({ children }) => {
 	return (
 		<div
 			className="min-h-screen p-10 m-auto max-w-full-container
@@ -18,7 +19,7 @@ const UserDashboard = () => {
 					<AsideBar />
 				</div>
 				<div className=" h-full col-span-8" id="rightContainer">
-					right container
+					<Outlet />
 				</div>
 			</div>
 		</div>

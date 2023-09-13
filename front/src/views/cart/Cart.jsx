@@ -28,7 +28,7 @@ const Cart = () => {
 
 	return (
 		<div>
-			<div id="allcontainer" className="max-w-4xl m-auto px-[5%] ">
+			<div id="allcontainer" className="min-h-screen max-w-4xl m-auto px-[5%] ">
         <div id="">
 					<SectionTitle title='Cart'/>
           <CartTable products={products} />

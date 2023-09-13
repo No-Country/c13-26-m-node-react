@@ -2,7 +2,7 @@ const { Router } = require('express');
 const { check } = require('express-validator');
 
 const { validateJWT, adminRole, validateFields } = require('../middlewares');
-const { createRole, getRoles } = require('../controllers/role');
+const { createRole, getRoles } = require('../controllers/roles');
 
 const router = Router();
 

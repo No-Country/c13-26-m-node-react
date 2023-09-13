@@ -1,9 +1,11 @@
+
 import { BsCartDash } from "react-icons/bs"
 import { AiOutlineUser, AiOutlineMenu } from "react-icons/ai"
 import { BiChevronDown } from "react-icons/bi"
 import { FiSearch } from "react-icons/fi"
 import MenuCategories from "./MenuCategories"
 import { Link } from "react-router-dom"
+
 
 const Navbar = () => {
 	return (
