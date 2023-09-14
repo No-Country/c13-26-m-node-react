@@ -1,8 +1,12 @@
 import { useState } from "react"
 import validate from "./validate"
+import axios from "axios"
+
 
 const RegisterComponent = () => {
 
+  const BackendUrl = import.meta.env.VITE_BACKEND_URL
+  console.log(BackendUrl)
   const [inputs, setInputs]= useState({ 
     name: "",
     email: "",
@@ -22,6 +26,16 @@ const RegisterComponent = () => {
     }))
   }
 
+  const handleSubmit = async (event) =>{
+    event.preventDefault()
+      try {
+          const resp = await axios.post( `${BackendUrl}/users` , inputs);
+          console.log(resp.data);
+      } catch (err) {
+          // Handle Error Here
+          console.error(err);
+      }
+  };
 
   return (
     <>
@@ -33,7 +47,7 @@ const RegisterComponent = () => {
       </div>
 
       <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-lg">
-        <form className="space-y-6 sm:w-full w-screen px-10" action="#" method="POST">
+        <form className="space-y-6 sm:w-full w-screen px-10" action="#" method="POST" >
             <div className="h-[70px]">
                 <label htmlFor="name" className="block text-sm sm:text-base font-semibold leading-6 text-gray-900">
                 Nombre y apellido
@@ -94,10 +108,11 @@ const RegisterComponent = () => {
 
             <div className="pt-5">
                 <button
-                type="submit"
-                className="rounded-xl flex w-full justify-center bg-gray-900 px-3 py-2 text-base font-semibold leading-6 text-white shadow-sm hover:bg-gray-800 duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-800"
+                  type="submit"
+                  className="rounded-xl flex w-full justify-center bg-gray-900 px-3 py-2 text-base font-semibold leading-6 text-white shadow-sm hover:bg-gray-800 duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-800"
+                  onClick={(event) => handleSubmit(event)} 
                 >
-                Ingresar
+                  Ingresar
                 </button>
             </div>
 
