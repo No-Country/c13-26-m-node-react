@@ -2,7 +2,7 @@
 
 const MenuHamburger = () => {
   return (
-    <article className="font-semibold font-poppins text-gray-700 leading-10">
+    <article className="font-semibold font-poppins text-gray-700 leading-10 bg-white">
         <ul>
         <li className="text-red-600">Home</li>
         <li>Features</li>
