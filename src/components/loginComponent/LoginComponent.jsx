@@ -1,7 +1,10 @@
 import { useState } from "react";
 import validate from "./validate";
+import axios from "axios"
 
 const LoginComponent = () => {
+
+  const BackendUrl = import.meta.env.VITE_BACKEND_URL
 
   const [inputs, setInputs]= useState({ 
     email: "",
@@ -20,6 +23,19 @@ const LoginComponent = () => {
       [event.target.name]: event.target.value
     }))
   }
+
+  const handleSubmit = async (event) =>{
+    event.preventDefault()
+      try {
+          const resp = await axios.post( `${BackendUrl}/auth/login` , inputs);
+          console.log(resp.data);
+          localStorage.setItem('token', resp.token)
+      } catch (err) {
+          // Handle Error Here
+          console.error(err);
+          localStorage.removeItem('token');
+      }
+  };
 
   return (
     <>
@@ -79,6 +95,7 @@ const LoginComponent = () => {
             <button
               type="submit"
               className="rounded-xl flex w-full justify-center bg-gray-900 px-3 py-2 text-base font-semibold leading-6 text-white shadow-sm hover:bg-gray-800 duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-800"
+              onClick={(event) => handleSubmit(event)}
             >
               Ingresar
             </button>
