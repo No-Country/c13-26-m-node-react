@@ -1,8 +1,12 @@
 import { useState } from "react"
 import validate from "./validate"
+import axios from "axios"
+
 
 const RegisterComponent = () => {
 
+  const BackendUrl = import.meta.env.VITE_BACKEND_URL
+  console.log(BackendUrl)
   const [inputs, setInputs]= useState({ 
     name: "",
     email: "",
@@ -25,7 +29,7 @@ const RegisterComponent = () => {
   const handleSubmit = async (event) =>{
     event.preventDefault()
       try {
-          const resp = await axios.post(process.env.BACKEND_URL + '/api/users', inputs);
+          const resp = await axios.post( `${BackendUrl}/api/users` , inputs);
           console.log(resp.data);
       } catch (err) {
           // Handle Error Here
