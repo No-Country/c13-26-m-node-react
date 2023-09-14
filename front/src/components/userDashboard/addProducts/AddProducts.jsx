@@ -12,7 +12,6 @@ const AddProducts = () => {
     name: "",
     description: "",
     price: "",
-    category: ""
   })
 
   const handleSubmit = async (event) => {
