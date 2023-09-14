@@ -1,56 +1,54 @@
 const Role = require('../models/role');
-const { User, Category } = require('../models');
+const { User, Category, Product } = require('../models');
 
-const isValidRole = async (role = '') => {
-    
-    if (!role) {
-        return true;
-    }
-
-    const roleExists = await Role.findOne({ role });
-    if (!roleExists) {
+const isRoleValid = async (role = '') => {
+    const existingRole = await Role.findOne({ role });
+    if (!existingRole) {
         throw new Error(`The role ${role} is not registered in the database`);
     }
-};
+}
 
 const emailExists = async (email = '') => {
     const emailExists = await User.findOne({ email });
     if (emailExists) {
         throw new Error(`The email ${email} is already registered`);
     }
-};
+}
 
 const userExistsById = async (id) => {
-    const userExists = await User.findById(id);
-    if (!userExists) {
-        throw new Error(`The ID does not exist: ${id}`);
+    const existingUser = await User.findById(id);
+    if (!existingUser) {
+        throw new Error(`User with ID ${id} does not exist`);
     }
 }
 
-/**
- * Validate allowed collections
- */
-const allowedCollections = (collection = '', collections = []) => {
-    const included = collections.includes(collection);
-    if (!included) {
-        throw new Error(`The collection ${collection} is not allowed. Allowed collections: ${collections}`);
+const categoryExistsById = async (id) => {
+    const existingCategory = await Category.findById(id);
+    if (!existingCategory) {
+        throw new Error(`Category with ID ${id} does not exist`);
+    }
+}
+
+const productExistsById = async (id) => {
+    const existingProduct = await Product.findById(id);
+    if (!existingProduct) {
+        throw new Error(`Product with ID ${id} does not exist`);
+    }
+}
+
+const validateAllowedCollections = (collection = '', collections = []) => {
+    const isIncluded = collections.includes(collection);
+    if (!isIncluded) {
+        throw new Error(`Collection ${collection} is not allowed. Allowed collections are: ${collections}`);
     }
     return true;
 }
 
-/**
- * Categories
- */
-const categoryExistsById = async (id) => {
-    const categoryExists = await Category.findById(id);
-    if (!categoryExists) {
-        throw new Error(`The id ${id} does not exist`);
-    }
-}
 module.exports = {
-    isValidRole,
+    isRoleValid,
     emailExists,
     userExistsById,
-    allowedCollections,
     categoryExistsById,
-};
+    productExistsById,
+    validateAllowedCollections
+}
