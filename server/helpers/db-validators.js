@@ -1,7 +1,7 @@
 const Role = require('../models/role');
 const { User, Category, Product } = require('../models');
 
-const isRoleValid = async (role = '') => {
+const isValidRole = async (role = '') => {
     const existingRole = await Role.findOne({ role });
     if (!existingRole) {
         throw new Error(`The role ${role} is not registered in the database`);
@@ -45,7 +45,7 @@ const validateAllowedCollections = (collection = '', collections = []) => {
 }
 
 module.exports = {
-    isRoleValid,
+    isValidRole,
     emailExists,
     userExistsById,
     categoryExistsById,

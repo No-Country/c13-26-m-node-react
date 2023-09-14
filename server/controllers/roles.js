@@ -37,7 +37,7 @@ const createRole = async (req, res) => {
     // Generate data to save
     const data = {
         role,
-        user: req.user._id
+        // user: req.user._id
     };
     
     const newRole = new Role(data);
