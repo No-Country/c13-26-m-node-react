@@ -1,21 +1,34 @@
+
 import {FaRegUser } from "react-icons/fa";
+import { useState } from "react"
+import Dashboard from "./Dashboard";
 
 const UserProfile = () => {
+
+    const [isOpen, setIsOpen] = useState(false);
+
+	const toggleOpen = () => {
+
+		setIsOpen(!isOpen);
+	}
 
   return (
 
     <main className='bg-white text-black min-h-screen flex justify-center 
-    items-center flex-col font-poppins'>
+    items-center flex-col font-poppins py-14 relative'>
 
         <div className="flex justify-center items-center gap-5 md:gap-28">
             <h2 className="text-2xl font-bold md:text-3xl">
                 Información personal
             </h2>
             <button className="w-14 h-14 bg-gray-200 text-black
-         flex justify-center items-center rounded-md mt-4 md:w-24 md:h-24">
+         flex justify-center items-center rounded-md mt-4 md:w-24 md:h-24" onClick={toggleOpen}>
               <FaRegUser className="text-4xl text-gray-700"/>
             </button>
         </div>
+        {isOpen &&<div className="absolute top-[165px] pl-64"> 
+            <Dashboard/>
+        </div>}
 
         <form className=' bg-white mb-5'>
             <h3 className="pt-3 pl-3 font-semibold text-center md:text-left">Información de la cuenta</h3>

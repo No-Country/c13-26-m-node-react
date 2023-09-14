@@ -16,6 +16,8 @@ import AddProducts from "./components/userDashboard/addProducts/AddProducts"
 import SellsRegistry from "./components/userDashboard/sellsRegistry/SellsRegistry"
 import Orders from "./components/userDashboard/orders/Orders"
 import UserProfile from "./components/user/UserProfile"
+import Results from "./components/results/Results"
+import CardProduct from "./components/cardProduct/CardProduct"
 
 
 
@@ -28,12 +30,14 @@ function App() {
 		<div>
 			<Navbar/>
 			<Routes>
+			<Route path='/celulares' element={<CardProduct/>}/>
 				<Route path='/' element={<Home/>}/>
 				<Route path='/cart' element={<Cart/>}/>
 				<Route path='/detail' element={<Detail/>}/>
 				<Route path='/shop' element={<Products/>}/>
 				<Route path='/login' element={<Login/>}/>
 				<Route path='/register' element={<Register/>}/>
+				<Route path='/results' element={<Results/>}/>
 				<Route path='/userprofile' element={<UserProfile/>}/>
 				<Route path='userDashboard' element={<UserDashboard/>}>
 					<Route path='personalInfo' element={<PersonalInfo />}/>
