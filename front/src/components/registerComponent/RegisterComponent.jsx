@@ -29,7 +29,7 @@ const RegisterComponent = () => {
   const handleSubmit = async (event) =>{
     event.preventDefault()
       try {
-          const resp = await axios.post( `${BackendUrl}/api/users` , inputs);
+          const resp = await axios.post( `${BackendUrl}/users` , inputs);
           console.log(resp.data);
       } catch (err) {
           // Handle Error Here
