@@ -1,5 +1,4 @@
 
-
 import ProductsContainer from "../../components/products/productsContainer/ProductsContainer"
 
 const Results = () => {
