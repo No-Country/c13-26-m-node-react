@@ -15,7 +15,7 @@ const UserProfile = () => {
   return (
 
     <main className='bg-white text-black min-h-screen flex justify-center 
-    items-center flex-col font-poppins py-14 relative'>
+    items-center flex-col font-poppins py-6 relative'>
 
         <div className="flex justify-center items-center gap-5 md:gap-28">
             <h2 className="text-2xl font-bold md:text-3xl">
@@ -85,18 +85,18 @@ const UserProfile = () => {
                 className='outline-none'/>
             </div>
             <button type='submit' className='w-32 bg-white text-[12px] h-8 rounded-2xl 
-                font-semibold mt-8 border-[1px] text-gray-800 border-gray-400'>
+                font-semibold mt-8 border-[1px] text-gray-800 border-gray-400 hover:bg-black hover:text-white'>
                 Update password
             </button>
             </div>
  
             <div className="flex gap-3 justify-center md:justify-start">
             <button type='submit' className='w-28 bg-black text-white text-[12px] h-8 rounded-2xl 
-                font-semibold mt-8'>
+                font-semibold mt-8 hover:bg-white hover:text-black hover:border-[1px] hover:border-black'>
                 Update profile
             </button>
             <button type='submit' className='w-28 bg-white text-gray-500 h-8 rounded-2xl 
-                font-semibold mt-8 text-[12px] border-gray-400 border-[1px]'>
+                font-semibold mt-8 text-[12px] border-gray-400 border-[1px] hover:bg-black hover:text-white'>
                 x Clear all
             </button>
             </div>

@@ -16,7 +16,7 @@ const Dashboard = () => {
   return (
     <section className="font-semibold font-poppins text-gray-500 text-sm
     border-[1px] border-gray-400 w-[250px] h-[500px] shadow-xl rounded-xl
-    ml-24 mb-6 bg-white">
+    ml-24 mb-6 bg-white pt-8">
         <article className="pt-4 pl-7">
         <ul className="cursor-pointer">
             <li className='text-sm flex gap-3 leading-[55px] text-black'> <span className='pt-5 text-black'>
@@ -34,7 +34,7 @@ const Dashboard = () => {
         </ul>
         </article>
         {isOpen && <article className="pl-14">
-        <ul className="cursor-pointer">
+        <ul className="cursor-pointer" onClick={toggleOpen}>
             <li className='text-sm flex gap-3 leading-10 hover:text-black'> <span className='pt-3'>
                     <AiOutlineBell/>
                 </span>Mis productos</li>
