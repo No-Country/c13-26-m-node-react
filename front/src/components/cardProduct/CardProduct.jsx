@@ -1,8 +1,10 @@
 import { AiFillStar, AiOutlineShoppingCart } from 'react-icons/ai';
+import { Link } from 'react-router-dom';
 
 const CardProduct = () => {
   return (
 
+    <Link to={`/detail`}>
     <div className='shadow-md mb-4'>
       <article className='bg-white rounded-[20px] h-[520px] shadow-md'>
         <figure className='px-5 pt-5 w-full flex justify-center items-center'>
@@ -28,6 +30,7 @@ const CardProduct = () => {
         </div>
       </article>
     </div>
+    </Link>
   )
 }
 

@@ -58,7 +58,7 @@ const AsideBar = () => {
 	const handlelogOut = (event) => {
 		event.preventDefault()
 		localStorage.removeItem('token');
-		navigate("/")
+		navigate("/login")
 	}
 
 	return (

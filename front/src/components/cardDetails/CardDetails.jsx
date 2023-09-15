@@ -7,7 +7,7 @@ const CardDetails = () => {
             <div className="flex flex-col md:flex-row">
                 <div className="flex-none w-full md:w-1/2 lg:w-1/3 relative border border-current border-1 rounded-xl">
                     <img
-                        src="https://devicer.cmsmasters.net/wp-content/uploads/2015/05/6.jpg"
+                        src="https://res.cloudinary.com/dreso9ye9/image/upload/v1692627425/iPhone12PromaxGrafito_byckia.png"
                         alt=""
                         className="rounded-xl w-full h-full object-cover"
                         loading="lazy"
@@ -16,9 +16,9 @@ const CardDetails = () => {
                 <form className="flex-auto py-4 md:py-2 px-4 md:px-8 lg:px-10 space-y-4">
                     <div className="space-y-2.5">
                         <h1 className="text-xl md:text-2xl lg:text-3xl font-semibold text-slate-900">
-                            Classic Utility Jacket
+                        iPhone 12 Pro Max
                         </h1>
-                        <div className="text-base md:text-lg lg:text-xl font-semibold text-slate-700">$110.00</div>
+                        <div className="text-base md:text-lg lg:text-xl font-semibold text-slate-700">$500.00</div>
                         <div className='flex flex-wrap text-slate-500'>
                             <FaRegStar />
                             <FaRegStar />

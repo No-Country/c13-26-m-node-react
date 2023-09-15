@@ -15,7 +15,7 @@ const TabsDetails = () => {
                 >
                     Descripción
                 </button>
-                <button
+                {/* <button
                     onClick={() => setActiveTab('Tab 2')}
                     className={`${activeTab === 'Tab 2'
                         ? 'border-b-2 border-blue-500 text-blue-500'
@@ -23,7 +23,7 @@ const TabsDetails = () => {
                         } focus:outline-none mb-2 md:mb-0 md:mr-4`}
                 >
                     Información adicional
-                </button>
+                </button> */}
                 <button
                     onClick={() => setActiveTab('Tab 3')}
                     className={`${activeTab === 'Tab 3'
@@ -56,13 +56,13 @@ const TabsDetails = () => {
                     </p>
                 </div>
                 <div className={`${activeTab === 'Tab 2' ? 'block' : 'hidden'} mx-auto w-full md:w-auto`}>
-                    contenido tab 2
+                    {/* contenido tab 2 */}
                 </div>
                 <div className={`${activeTab === 'Tab 3' ? 'block' : 'hidden'} mx-auto w-full md:w-auto`}>
-                    contenido tab 3
+                    {/* contenido tab 3 */}
                 </div>
                 <div className={`${activeTab === 'Tab 4' ? 'block' : 'hidden'} mx-auto w-full md:w-auto`}>
-                    contenido tab 4
+                    {/* contenido tab 4 */}
                 </div>
             </div>
         </div>

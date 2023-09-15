@@ -132,11 +132,11 @@ const Navbar = () => {
 						<ul className="md:flex gap-7 sm: hidden">
 							<li className="hover:text-red-600"><Link to='/'>Home</Link></li>
 							{/*<li className="hover:text-red-600"><Link to='/cart'>Cart</Link></li>*/}
-							<li className="hover:text-red-600"><Link to='/detail'>Detail</Link></li>
+							{/* <li className="hover:text-red-600"><Link to='/detail'>Detail</Link></li> */}
 							<li className="hover:text-red-600"><Link to='/shop'>Shop</Link></li>
-							<li className="hover:text-red-600"><Link to='/login'>Login</Link></li>
-							<li className="hover:text-red-600"><Link to='/register'>Register</Link></li>
-							<li className="hover:text-red-600"><Link to='/userprofile'>User Profile</Link></li>
+							<li className="hover:text-red-600"><Link to='/'>Sobre Nosotros</Link></li>
+							{/* <li className="hover:text-red-600"><Link to='/register'>Register</Link></li> */}
+							{/* <li className="hover:text-red-600"><Link to='/userprofile'>User Profile</Link></li> */}
 						</ul>
 					</div>
 				</div>
