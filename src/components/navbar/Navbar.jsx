@@ -134,6 +134,7 @@ const Navbar = () => {
 							<li className="hover:text-red-600"><Link to='/shop'>Compras</Link></li>
 							<li className="hover:text-red-600"><Link to='/login'>Login</Link></li>
 							<li className="hover:text-red-600"><Link to='/register'>Registro</Link></li>
+							<li className="hover:text-red-600"><Link to='/nosotros'>Sobre Nosotros</Link></li>
 							
 						</ul>
 					</div>

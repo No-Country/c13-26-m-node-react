@@ -17,6 +17,7 @@ import SellsRegistry from "./components/userDashboard/sellsRegistry/SellsRegistr
 import Orders from "./components/userDashboard/orders/Orders";
 import UserProfile from "./components/user/UserProfile";
 import Results from "./components/results/Results";
+import AboutUs from "./components/aboutUs/AboutUs";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/nosotros" element={<AboutUs/>} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/detail" element={<Detail />} />
         <Route path="/shop" element={<Products />} />
