@@ -12,6 +12,7 @@ const AddProducts = () => {
     name: "",
     description: "",
     price: "",
+    category: ""
   })
 
   const handleSubmit = async (event) => {
@@ -41,25 +42,32 @@ const AddProducts = () => {
             <input type="text"
               name='name'
               placeholder='Nombre del producto'
-              className='outline-none' />
+              className='outline-none' 
+              onChange={event => setProduct({ ...product, name: event.target.value })}
+              value={product.name || ""}
+              />
           </div>
         </div>
 
         <div>
           <textarea rows="2" className="w-72 rounded-lg flex items-center px-4 my-6 border-gray-300 border-2 md:w-[500px] ml-12 md:ml-0"
-            placeholder="Breve descripcion"></textarea>
+            placeholder="Breve descripcion" onChange={event => setProduct({ ...product, description: event.target.value })}
+            value={product.description || ""}></textarea>
         </div>
 
         <div className="flex flex-row justify-center flex-wrap gap-4">
           <div className=' h-10 w-60 rounded-lg flex items-center px-4 my-6 border-gray-300 border-2'>
             $
             <input type="number"
-              name='prince'
+              name='price'
               placeholder=' Precio del producto'
-              className='outline-none' />
+              className='outline-none'
+              onChange={event => setProduct({ ...product, price: event.target.value })}
+              value={product.price || ""} />
           </div>
           <div className=''>
-            <select className="h-10 w-60 rounded-lg flex items-center px-4 my-6 border-gray-300 border-2">
+            <select className="h-10 w-60 rounded-lg flex items-center px-4 my-6 border-gray-300 border-2" onChange={event => setProduct({ ...product, category: event.target.value })}
+              value={product.category || ""}>
               <option selected>Categoria del producto</option>
               <option value="Cell Phones">Cell Phones</option>
               <option value="Computer Hardware">Computer Hardware</option>
@@ -87,7 +95,7 @@ const AddProducts = () => {
         </div>
 
         <div className="flex gap-3 justify-center md:justify-start">
-          <button type='submit' className='w-28 bg-black text-white text-[16px] h-8 rounded-2xl font-semibold mt-8'>
+          <button type='submit' className='w-28 bg-black text-white text-[16px] h-8 rounded-2xl font-semibold mt-8' onClick={(event) => handleSubmit(event)}>
             Publicar
           </button>
           <button type='submit' className='w-28 bg-white text-gray-500 h-8 rounded-2xl font-semibold mt-8 text-[16px] border-gray-400 border-[1px]'>

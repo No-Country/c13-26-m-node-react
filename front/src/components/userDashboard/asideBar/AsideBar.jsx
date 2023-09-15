@@ -2,6 +2,7 @@ import React from "react"
 import NavigationLink from "./navigationLink/NavigationLink"
 import NavigationGroup from "./navigationGroup/NavigationGroup"
 import icon from "../../../assets/icons/select-icon.svg"
+import { useNavigate } from "react-router-dom"
 
 const linksConfig = [
 	{
@@ -51,6 +52,15 @@ const linksConfig = [
 ]
 
 const AsideBar = () => {
+
+	const navigate = useNavigate();
+
+	const handlelogOut = (event) => {
+		event.preventDefault()
+		localStorage.removeItem('token');
+		navigate("/")
+	}
+
 	return (
 		<div
 			className="flex flex-col gap-2 items-start
@@ -68,9 +78,8 @@ const AsideBar = () => {
 			})}
 
 			<button
-				className="mt-auto self-center py-2 px-5 
-											border border-neutral-700 rounded-2xl
-											hover:bg-red-400 hover:text-gray-100"
+				className="mt-auto self-center py-2 px-5 border border-neutral-700 rounded-2xl hover:bg-red-400 hover:text-gray-100"
+				onClick={(event) => handlelogOut(event)}
 			>
 				x Logout
 			</button>
