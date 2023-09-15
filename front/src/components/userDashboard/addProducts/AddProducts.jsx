@@ -46,7 +46,7 @@ const AddProducts = () => {
         </div>
 
         <div>
-          <textarea rows="2" class="w-72 rounded-lg flex items-center px-4 my-6 border-gray-300 border-2 md:w-[500px] ml-12 md:ml-0"
+          <textarea rows="2" className="w-72 rounded-lg flex items-center px-4 my-6 border-gray-300 border-2 md:w-[500px] ml-12 md:ml-0"
             placeholder="Breve descripcion"></textarea>
         </div>
 
@@ -75,7 +75,7 @@ const AddProducts = () => {
         </div>
 
         <div>
-          <textarea rows="4" class="w-72 rounded-lg flex items-center px-4 my-6 border-gray-300 border-2 md:w-[500px] ml-12 md:ml-0"
+          <textarea rows="4" className="w-72 rounded-lg flex items-center px-4 my-6 border-gray-300 border-2 md:w-[500px] ml-12 md:ml-0"
             placeholder="Informacion adicional"></textarea>
         </div>
 
