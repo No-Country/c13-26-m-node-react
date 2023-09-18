@@ -77,7 +77,7 @@ const Navbar = () => {
 					<nav>
 						<ul className="flex gap-5 font-semibold text-white text-[32px] pt-6 md:text-[42px] md: pb-4">
 							<li>
-								<Link to="/userDashboard">
+								<Link to="/userDashboard/personalInfo">
 									<AiOutlineUser />
 								</Link>
 							</li>
@@ -134,7 +134,7 @@ const Navbar = () => {
 							{/*<li className="hover:text-red-600"><Link to='/cart'>Cart</Link></li>*/}
 							{/* <li className="hover:text-red-600"><Link to='/detail'>Detail</Link></li> */}
 							<li className="hover:text-red-600"><Link to='/shop'>Shop</Link></li>
-							<li className="hover:text-red-600"><Link to='/'>Sobre Nosotros</Link></li>
+							<li className="hover:text-red-600"><Link to='/'>Nosotros</Link></li>
 							{/* <li className="hover:text-red-600"><Link to='/register'>Register</Link></li> */}
 							{/* <li className="hover:text-red-600"><Link to='/userprofile'>User Profile</Link></li> */}
 						</ul>
