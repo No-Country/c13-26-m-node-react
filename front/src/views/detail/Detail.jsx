@@ -1,6 +1,6 @@
 import React from 'react'
-import CardDetails from '../../components/cardDetails/cardDetails'
-import TabsDetails from '../../components/tabsDetails/TabsDetails'
+import CardDetails from '../../components/cardDetails/CardDetails.jsx'
+import TabsDetails from '../../components/tabsDetails/TabsDetails.jsx'
 import Banner from '../../components/banner/Banner'
 
 const Detail = () => {
